@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Backroads || Smart Meters</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css" />
+    <!-- styles css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header id="home">
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./images/logo.svg" class="nav-logo" alt="" />
+            <button
+              type="button"
+              class="nav-toggle"
+              id="nav-toggle"
+              aria-label="nav toggler "
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- end of nav header -->
+          <!-- nav links -->
+          <div class="nav-links" id="nav-links">
+            <!-- single link -->
+            <a href="#home" class="scroll-link nav-link">
+              home
+            </a>
+            <!-- end of single link -->
+            <!-- single link -->
+            <a href="#about" class=" scroll-link nav-link">
+              Explore
+            </a>
+            <!-- end of single link -->
+			<a href="#monitor" class=" scroll-link nav-link">
+              meter
+            </a>
+            <!-- single link -->
+            <a href="#services" class="nav-link scroll-link">
+              services
+            </a>
+            <!-- end of single link -->
+            <!-- single link -->
+            <a href="#featured" class="nav-link scroll-link">
+              Technology
+            </a>
+            <a href="#services2" class="nav-link scroll-link">
+              About Us
+            </a>
+            <!-- end of single link -->
+            <!-- single link -->
+            <!-- end of single link -->
+          </div>
+          <!-- end of nav links -->
+          <!-- nav social media icons -->
+          <!-- footer icons -->
+          <div class="nav-icons">
+            <a href="https://www.twitter.com" target="_blank" class="nav-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="nav-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="nav-icon"><i class="fab fa-squarespace"></i></a>
+          <!-- end of nav social media icons -->
+        </div>
+      </nav>
+      <!-- hero component -->
+      <div class="hero">
+        <div class="hero-banner">
+          <h1 class="hero-title">NO MORE SURPRISE ELECTRICITY BILLS</h1>
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a href="#monitor" class= "btn-white scroll-link">Monitor your Energy Usage Live</a>
+        </div>
+      </div>
+    </header>
+    <!-- end of header  -->
+    <!-- about section -->
+    <section class="section about" id="about">
+      <!-- title  -->
+      <div class="title-wrapper">
+        <h2 class="title">Exp<span class="subtitle">lore</span></h2>
+      </div>
+      <!-- end of title  -->
+      <!-- about-center -->
+      <div class="section-center about-center">
+        <!-- about img wrapper-->
+        <div class="about-img">
+          <img
+            src="./images/about.jpg"
+            class="about-photo"
+            alt="awesome beach"
+          />
+        </div>
+        <!-- about info -->
+        <article class="about-info">
+          <h3>Feel the difference</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
+            unde dolor?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+            quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
+            unde dolor?
+          </p>
+          <span class="btn-primary">read more</span>
+        </article>
+      </div>
+    </section>
+	
+	
+	
+	
+	
+	
+	<section class="section about" id="monitor">
+      <!-- title  -->
+      <div class="title-wrapper">
+        <h2 class="title" id="monusg">monitor <span class="subtitle"> energy usage</span></h2>
+      </div>
+      <!-- end of title  -->
+      <!-- about-center -->
+	  <div id="monitordisp">
+      <div class=" data section-center about-center">
+        <!-- about img wrapper-->
+		<!--<h4 style="font-family:DS-Digital">
+		cost = Rs 10 / KWh 
+		</h4>-->
+		<div class="mf"> 
+          <h4 class="orbit">available units</h4>
+        <!-- about info -->
+          <h4 class="digital sec" id="au">-----</h4>
+      </div>
+	  <div class="mf">
+          <h4 class="orbit">consumed units</h4>
+        <!-- about info -->
+          <h4 class="digital sec" id="cu">-----</h4>
+      </div>
+
+	  </div>
+	  <div class=" data section-center about-center">
+	  <div class="mf">
+          <h4 class="orbit">Voltage</h4>
+        <!-- about info -->
+          <h4 class="digital sec" id="vol">220.02 V</h4>
+      </div>
+	  <div class="mf">
+          <h4 class="orbit">current</h4>
+        <!-- about info -->
+          <h4 class="digital sec" id="cur">1.03 A</h4>
+      </div>
+	  <div class="mf">
+          <h4 class="orbit">power factor</h4>
+        <!-- about info -->
+          <h4 class="digital sec" id="pf">0.9998</h4>
+      </div>
+	  
+	  </div>
+	  
+	  <div class=" data section-center about-center">
+	  <div class="mf">
+          <h4 class="orbit">Active Power (P)</h4>
+        <!-- about info -->
+          <h4 class="digital sec" id="ap">-----W</h4>
+      </div>
+	  <div class="mf">
+          <h4 class="orbit">Reactive Power (Q)</h4>
+        <!-- about info -->
+          <h4 class="digital sec" id="rp">-----VAR</h4>
+      </div>
+	  <div class="mf">
+          <h4 class="orbit">Apparent Power (S)</h4>
+        <!-- about info -->
+          <h4 class="digital sec" id="app">-----VA</h4>
+      </div>
+	  
+	  </div>
+	  </div>
+	  <h4 class="d7" style="font-family:Digital-7; margin-left:20px;">
+		cost = Rs 40 / KWh 
+		</h4>
+    </section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <!-- end of about section -->
+    <!-- 
+      
+     -->
+    <section class="section services" id="services">
+      <!-- title  -->
+      <div class="title-wrapper">
+        <h2 class="title">our <span class="subtitle">services</span></h2>
+      </div>
+      <!-- end of title  -->
+      <div class="section-center services-center">
+        <!-- single service -->
+        <article class="service">
+          <span class="service-icon"><i class="fas fa-wifi fa-fw"></i></span>
+          <div class="service-info">
+            <h4 class="service-title">faster & easier communication</h4>
+            <p class="service-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, officia.
+            </p>
+          </div>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <span class="service-icon"><i class="fas fa-archive fa-fw"></i></span>
+          <div class="service-info">
+            <h4 class="service-title">pre-paid process</h4>
+            <p class="service-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, officia.
+            </p>
+          </div>
+        </article>
+        <!-- end of single service -->
+		
+		<!-- single service -->
+        <article class="service">
+          <span class="service-icon"><i class="fas fa-lock fa-fw"></i></span>
+          <div class="service-info">
+            <h4 class="service-title">enhanced security</h4>
+            <p class="service-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, officia.
+            </p>
+          </div>
+        </article>
+        <!-- end of single service -->
+		<!-- single service -->
+    <article class="service">
+      <span class="service-icon"><i class="fas fa-wallet fa-fw"></i></span>
+      <div class="service-info">
+        <h4 class="service-title">cost effective</h4>
+        <p class="service-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Asperiores, officia.
+        </p>
+      </div>
+    </article>
+    <!-- end of single service -->
+      </div>
+    </section>
+    <!-- end of services -->
+    <!-- featured tours -->
+    <section class="section featured-tours" id="featured">
+      <!-- title  -->
+      <div class="title-wrapper">
+        <h2 class="title" style="text-align: center;">Technology<h2 class="subtitle" style="text-align: center;">USED</h2></h2>
+      </div>
+      <!-- end of title  -->
+      <!-- featured-center -->
+      <div class="section-center featured-center ">
+        <!-- single tour -->
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-1.jpg"  class="tour-img" alt="" />
+            <!-- <p class="tour-date">----</p> -->
+          </div>
+          <!-- tour footer -->
+          <div class="tour-footer">
+            <h4 class="tour-title">Arduino Microcontroller</h4>
+            <!-- tour info -->
+            <!-- <div class="tour-info">
+              <p class="tour-country">
+                <span><i class="fas fa-map"></i></span> ----
+              </p>
+              <div class="tour-details">
+                <p>----</p>
+                <p>----</p>
+              </div>
+            </div> -->
+          </div>
+        </article>
+        <!-- end of single tour -->
+        <!-- single tour -->
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-2.jpg"  class="tour-img" alt="" />
+            <!-- <p class="tour-date">----</p> -->
+          </div>
+          <!-- tour footer -->
+          <div class="tour-footer">
+            <h4 class="tour-title">GSM SIM-900</h4>
+            <!-- tour info -->
+            <!-- <div class="tour-info">
+              <p class="tour-country">
+                <span><i class="fas fa-map"></i></span>----
+              </p>
+              <div class="tour-details">
+                <p>----</p>
+                <p>----</p>
+              </div>
+            </div> -->
+          </div>
+        </article>
+        <!-- end of single tour -->
+        <!-- single tour -->
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-3.jpg"  class="tour-img" alt="" />
+            <!-- <p class="tour-date">----</p> -->
+          </div>
+          <!-- tour footer -->
+          <div class="tour-footer">
+            <h4 class="tour-title">Hall-Effect Sensors</h4>
+            <!-- tour info -->
+            <!-- <div class="tour-info">
+              <p class="tour-country">
+                <span><i class="fas fa-map"></i></span>----
+              </p>
+              <div class="tour-details">
+                <p>----</p>
+                <p>----</p>
+              </div>
+            </div> -->
+          </div>
+        </article>
+        <!-- end of single tour -->
+        <!-- single tour -->
+        <!--article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-4.jpg" style="width:350px;height:250px;" class="tour-img" alt="" />
+            <p class="tour-date">december 5th, 2019</p>
+          </div> -->
+          <!-- tour footer -->
+          <!--<div class="tour-footer">
+            <h4 class="tour-title">kenya highlights</h4>-->
+            <!-- tour info -->
+            <!--<div class="tour-info">
+              <p class="tour-country">
+                <span><i class="fas fa-map"></i></span> kenya
+              </p>
+              <div class="tour-details">
+                <p>22 days</p>
+                <p>from $5400</p>
+              </div>
+            </div>
+          </div>
+        </article> -->
+        <!-- end of single tour -->
+      </div>
+      <!-- end of tours center -->
+      <div class="tour-link">
+        <span class="btn-primary">Details</span>
+      </div>
+    </section>
+    <!-- end of featured tours -->
+    <!-- gallery  -->
+
+
+    <!-- end of about section -->
+    <!-- services -->
+    <section class="section services aboutus" id="services2">
+      <!-- title  -->
+      <div class="title-wrapper">
+        <h2 class="title">About<span class="subtitle">Us</span></h2>
+      </div>
+      <!-- end of title  -->
+      <div class="section-center services-center abt">
+        <!-- single service -->
+          <div class="service-info ab2">
+            <span class="service-title  btn-white btn"  >2017 - ee - 32</span>
+            <p class="service-text">
+              <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, officia. -->
+            </p>
+          </div>
+        <!-- end of single service -->
+        <!-- single service -->
+          <div class="service-info ab2">
+            <span class="service-title  btn-white btn"  >2017 - ee - 64</span>
+            <p class="service-text">
+              <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, officia. -->
+            </p>
+          </div>
+        <!-- end of single service -->
+        <!-- single service -->
+          <div class="service-info ab2">
+            <span class="service-title  btn-white btn" >2017 - ee - 77</span>
+            <p class="service-text">
+              <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, officia. -->
+            </p>
+          </div>
+        <!-- end of single service -->
+		
+		<!-- single service -->
+          <div class="service-info ab2">
+            <span class="service-title  btn-white btn" >2017 - ee - 94</span>
+            <p class="service-text">
+              <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, officia. -->
+            </p>
+          </div>
+        <!-- end of single service -->
+		
+      </div>
+    </section>
+
+
+
+
+
+    <!-- end of gallery  -->
+    <!-- contact -->
+    <section class="section deals" id="deals">
+      <!-- title  -->
+      <div class="title-wrapper">
+        <h2 class="title">sub<span class="subtitle ">scribe</span></h2>
+      </div>
+      <!-- end of title  -->
+      <form>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="your email" />
+          <span  class="btn-submit">submit</span>
+        </div>
+      </form>
+    </section>
+    <!-- end of contact -->
+    <!-- footer -->
+    <footer class="section footer">
+      <!-- footer links -->
+      <div class="footer-links">
+        <a href="#home" class="footer-link scroll-link">Home</a>
+        <a href="#about" class="footer-link scroll-link">Explore</a>
+        <a href="#monitor" class="footer-link scroll-link">Meter</a>
+        <a href="#featured" class="footer-link scroll-link">Technology</a>
+        <a href="#services2" class="footer-link scroll-link" scroll-link>About Us</a>
+
+      </div>
+      <!-- footer icons -->
+      <div class="footer-icons">
+        <a href="https://www.twitter.com" target="_blank" class="footer-icon"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.twitter.com" target="_blank" class="footer-icon"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.twitter.com" target="_blank" class="footer-icon"
+          ><i class="fab fa-squarespace"></i
+        ></a>
+      </div>
+      <p class="copyright">
+        copyright &copy; smart meters company
+        <span id="date"></span>. all rights reserved
+      </p>
+    </footer>
+    <!-- js -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
